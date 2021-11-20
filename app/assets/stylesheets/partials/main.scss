@@ -1,0 +1,77 @@
+
+.main {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.profiler-results {
+  display: none !important;
+}
+
+nav {
+  padding-left: 5%;
+  padding-right: 1%; 
+  justify-content: space-between;
+  width: 100%;
+  display: flow-root;
+  flex-wrap: unset;
+
+    .container {
+      max-width: 95%;
+
+      .nav-item {
+        list-style-type: none;        
+      }
+
+      .navbar-collapse {
+        align-content: space-between;
+        display: contents !important;
+
+        .navbar-nav {
+          white-space: 'break-spaces'; 
+          
+          .user-name {
+            align-self: center;
+            padding-right: 10%;
+          }
+        }
+
+        .mr-auto {
+              margin-right: auto;
+        }
+      }
+    }
+}
+
+
+//  Form configuration
+.mb-3 {
+  display: grid;
+  width: 200px;
+}
+
+.landing {
+  .logo {
+    align-items: center;
+    display: grid;
+    text-align: center;
+    min-height: 80vh;
+
+    p {
+     text-decoration: none !important;
+    }
+  }
+}
+
+.btn {
+  border-radius: 2px !important;
+}
+
+.btn-login {
+  width: 100% !important;
+  color: white !important;
+}
+
+.btn-signup {
+  width: 100% !important;
+}
