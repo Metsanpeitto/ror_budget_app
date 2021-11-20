@@ -1,10 +1,15 @@
-# ror_Recipe_app_m5_gp
+# ror_budget_app
 
 
 ![Microverse](https://img.shields.io/badge/Microverse-blueviolet)
 
 
-The Recipe app keeps track of all your recipes, ingredients, and inventory. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Also, since sharing recipes is an important part of cooking the app should allow you to make them public so anyone can access them.
+The Budget app keeps track is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
+
+Features: 
+- Register and log in, so that the data is private to them.
+- Introduce new transactions associated with a category.
+- See the money spent on each category.
 
 
 [Recipe App Requirements](https://github.com/microverseinc/curriculum-rails/blob/main/recipe-app/buisness_requirements.md)
@@ -27,14 +32,14 @@ follow the instructions [here](https://www.ruby-lang.org/en/documentation/instal
 
 If you want a copy of this file go to the github repository and download it from there
 
-- [`git clone https://github.com/Metsanpeitto/ror_Recipe_app_m5_gp`](https://github.com/Metsanpeitto/ror_Recipe_app_m5_gp)
+- [`git clone https://github.com/Metsanpeitto/ror_budget_app`](https://github.com/Metsanpeitto/ror_budget_app)
 
 
 ### Setup
 
 ```cmd
-git clone  https://github.com/Metsanpeitto/ror_Recipe_app_m5_gp.git
-cd ./ror_Recipe_app_m5_gp
+git clone  https://github.com/Metsanpeitto/ror_budget_app.git
+cd ./ror_budget_app
 ```
 
 ### Install gems
@@ -42,24 +47,6 @@ cd ./ror_Recipe_app_m5_gp
 ```cmd
 bundle install
 ```
-
-### Database creation
-
-```cmd
-# Open Postgres form the terminal 
-$ sudo -u postgres -i
-$ psql
-
-# Create user
-postgres=# create user microverse-user -s
-
-# Create db 
-postgres=# create db ror_blog_m5_w1_development -s
-
-# Destroys older, create new and populate with seed from the terminal
-$ rake db:reset
-```
-
 
 ### Apply migration (only if you generate a new migration file)
 
