@@ -10,39 +10,40 @@
 
 nav {
   padding-left: 5%;
-  padding-right: 1%; 
+  padding-right: 1%;
   justify-content: space-between;
   width: 100%;
   display: flow-root;
   flex-wrap: unset;
 
-    .container {
-      max-width: 95%;
+  .container {
+    max-width: 95%;
 
-      .nav-item {
-        list-style-type: none;        
+    .navbar-toggler {
+      display: none !important;
+    }
+
+    .nav-item {
+      list-style-type: none;
+    }
+
+    .navbar-collapse {
+      align-content: space-between;
+      display: contents !important;
+
+      .navbar-nav {
+        .user-name {
+          align-self: center;
+          padding-right: 10%;
+        }
       }
 
-      .navbar-collapse {
-        align-content: space-between;
-        display: contents !important;
-
-        .navbar-nav {
-          white-space: 'break-spaces'; 
-          
-          .user-name {
-            align-self: center;
-            padding-right: 10%;
-          }
-        }
-
-        .mr-auto {
-              margin-right: auto;
-        }
+      .mr-auto {
+        margin-right: auto;
       }
     }
+  }
 }
-
 
 //  Form configuration
 .mb-3 {
@@ -58,7 +59,7 @@ nav {
     min-height: 80vh;
 
     p {
-     text-decoration: none !important;
+      text-decoration: none !important;
     }
   }
 }
