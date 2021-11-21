@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
+  resources :entities
   devise_for :users
 
+  root to: "groups#index"
   get "groups/index"  
-  root to: "landing#index"  
+  get "landing", to: 'landing#index', as: 'landing'
 
   resources :groups
-  resources :entities
 end

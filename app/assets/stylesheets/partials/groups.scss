@@ -1,3 +1,24 @@
 // Place all the styles related to the Groups controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.groups {
+    text-decoration: none !important;
+    text-align: center;    
+    a {
+        text-decoration: none !important;
+    }
+    .card-link {
+        .card-group {
+         border: 2px solid #0000000a;
+         border-radius: 4px;
+         display: grid;
+         grid-template-columns: 25% 40% 25%;
+         padding: 2.5%;
+         column-gap: 5%;
+         width: 100%;
+         align-items: center;
+         justify-items: center;    
+        }
+    }
+}

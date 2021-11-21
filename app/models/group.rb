@@ -3,5 +3,9 @@ class Group < ApplicationRecord
   has_and_belongs_to_many :entities
   before_destroy { entities.clear }
 
-  validates :name, :icon, :user,  presence: true
+  validates :name, :icon, :user, presence: true
+
+  def total
+    entities.sum('amount')
+  end
 end
