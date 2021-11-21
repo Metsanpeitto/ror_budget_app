@@ -11,8 +11,8 @@ class EntitiesController < ApplicationController
   end
 
   def show
-    @entity.
-  end  
+    @entity
+  end
 
   # POST /entities or /entities.json
   def create

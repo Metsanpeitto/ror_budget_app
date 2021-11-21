@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 <section class="groups">
-  <h1>Groups</h1>
+  <h1>Budgets</h1>
   <% @groups.each do |group|%>
     <%= link_to  group_path(group.id), class: 'card-link' do %>
       <div class="card-group">
@@ -14,5 +14,5 @@
     <% end %>
   <% end %>
   <br>
-  <%= link_to 'Add new category', new_group_path, class: 'btn btn-success' %>
+  <%= link_to 'Add new budget', new_group_path, class: 'btn btn-success' %>
 </section>
