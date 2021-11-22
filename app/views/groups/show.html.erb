@@ -1,33 +1,39 @@
-<p id="notice"><%= notice %></p>
-<section class="groups">
+<div class="top-title">
   <h1>Budget : <%= @group.name %></p>
-</h1>
-<div class="card-group">
-  <div class="card-center">
-    <h5><%= @group.name %></h5>
-    <h6><%= @group.created_at %></h6>
-  </div>
-  <div class="h4"> <%= @group.total %> $</div>
 </div>
-<br/>
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">Spense</th>
-      <th scope="col">Amount</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @group.entities.each do |entity| %>
-      <div class="new-table">
-        <tr >
-          <th scope="row"><%= entity.name %></th>
-          <td><%= entity.amount %>$ </td>
-        </tr>
-      </div>
-    <% end %>
-  </tbody>
-</table>
-<br>
-<%= link_to 'Back', entities_path , class:"btn btn-danger"  %>
-</section>
+<div class="page-group-show">
+  <div class="card-group">
+    <div class="card-left">
+      <img src='<%=  @group.icon %>' alt="logo">
+    </div>
+    <div class="card-center">
+      <h5><%= @group.name %></h5>
+      <p><%= @group.created_at.strftime("%Y-%m-%d")  %></p>
+      <p><%= @group.created_at.strftime("%H:%M")  %></p>
+    </div>
+    <div class="card-center">
+      <div class="h4"> <%= @group.total %> $</div>
+    </div>
+  </div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Spense</th>
+        <th scope="col">Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @group.entities.each do |entity| %>
+        <% if entity.name %>
+          <div class="new-table">
+            <tr >
+              <th scope="row"><%= entity.name %></th>
+              <td><%= entity.amount %>$ </td>
+            </tr>
+          </div>
+        <% end %>
+      <% end %>
+    </tbody>
+  </table>
+  <%= link_to 'Back', entities_path , class:"btn btn-danger"  %>
+</div>

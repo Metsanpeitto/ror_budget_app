@@ -2,25 +2,129 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-.groups {
+.page-group-index {
   text-decoration: none !important;
   text-align: center;
+  padding-top: 15%;
 
   a {
     text-decoration: none !important;
   }
 
-  .card-link {
-    .card-group {
-      border: 2px solid #0000000a;
-      border-radius: 4px;
-      display: grid;
-      grid-template-columns: 25% 40% 25%;
-      padding: 2.5%;
-      column-gap: 5%;
+  .card-group {
+    border: 2px solid #0000000a;
+    border-radius: 4px;
+    display: grid;
+    padding: 2.5%;
+    column-gap: 5%;
+    width: 90%;
+    margin-left: 5%;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: auto auto auto;
+    align-content: center;
+    grid-row-start: 1;
+
+    .card-center {
+      text-transform: capitalize;
+
+      p {
+        margin: 0% !important;
+      }
+    }
+  }
+
+  .table {
+    grid-row-start: 2;
+    min-height: 40vh;
+  }
+
+  .btn {
+    margin-left: 0%;
+    margin-top: 15%;
+    margin-bottom: 5%;
+    grid-row-start: 3;
+  }
+}
+
+.page-group-show {
+  text-decoration: none !important;
+  text-align: center;
+  padding-top: 15%;
+  width: 90%;
+  min-height: 90vh;
+  margin-left: 5%;
+  display: grid;
+  grid-row-gap: 5%;
+
+  a {
+    text-decoration: none !important;
+  }
+
+  .card-group {
+    border: 2px solid #0000000a;
+    border-radius: 4px;
+    display: grid;
+    padding: 2.5%;
+    column-gap: 5%;
+    width: 90%;
+    margin-left: 5%;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: auto auto auto;
+    align-content: center;
+    grid-row-start: 1;
+
+    .card-center {
+      text-transform: capitalize;
+
+      p {
+        margin: 0% !important;
+      }
+    }
+  }
+
+  .table {
+    grid-row-start: 2;
+    min-height: 45vh;
+  }
+
+  .btn {
+    margin-left: unset;
+    grid-row-start: 3;
+    width: 100%;
+  }
+}
+
+.logo-collection {
+  justify-items: center;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 80%;
+  margin: auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.group-form {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 70vh;
+  display: grid;
+  padding-top: 10%;
+
+  .mb3 {
+    grid-template-rows: 20px auto !important;
+  }
+
+  .actions {
+    width: unset;
+    margin-left: 0%;
+
+    .btn {
       width: 100%;
-      align-items: center;
-      justify-items: center;
+      margin-left: 0%;
     }
   }
 }

@@ -1,18 +1,19 @@
-<p id="notice"><%= notice %></p>
-<section class="groups">
-  <h1>Budgets</h1>
+<div class="top-title">
+  <h1>Budgets</p>
+</div>
+<div class="page-group-index">
   <% @groups.each do |group|%>
     <%= link_to  group_path(group.id), class: 'card-link' do %>
       <div class="card-group">
         <img src='<%=  group.icon %>' alt="logo">
         <div class="card-center">
           <h5><%= group.name %></h5>
-          <h6><%= group.created_at %></h6>
+          <p><%= group.created_at.strftime("%Y-%m-%d")  %></p>
+          <p><%= group.created_at.strftime("%H:%M")  %></p>
         </div>
         <div class="h4"> <%= group.total %> $</div>
       </div>
     <% end %>
   <% end %>
-  <br>
   <%= link_to 'Add new budget', new_group_path, class: 'btn btn-success' %>
-</section>
+</div>

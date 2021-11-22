@@ -7,3 +7,45 @@
   padding: 2%;
   border-radius: 4px;
 }
+
+.page-spenses {
+  display: block !important;
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 100vh;
+  grid-template-rows: 15% 45% 10%;
+  grid-row-gap: 5%;
+  padding-top: 10%;
+}
+
+.entity-header {
+  display: grid;
+  grid-template-columns: 20% auto;
+  grid-column-gap: 10%;
+
+  h5 {
+    transform: translateX(-10%) !important;
+    align-self: center;
+  }
+}
+
+.entity-form {
+  padding-left: 5%;
+  padding-right: 5%;
+  min-height: 70vh;
+  display: grid;
+  padding-top: 20%;
+
+  .mb3 {
+    grid-template-rows: 20px auto !important;
+  }
+
+  .actions {
+    width: 90%;
+    margin-left: unset;
+
+    .btn {
+      width: 100%;
+    }
+  }
+}
