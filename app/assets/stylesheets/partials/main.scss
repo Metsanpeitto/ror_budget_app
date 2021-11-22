@@ -7,6 +7,10 @@ $gray: #434b54;
   background-color: transparent !important;
 }
 
+a:hover {
+  background-color: transparent !important;
+}
+
 .main {
   padding-left: 0%;
   padding-right: 0%;
@@ -31,11 +35,11 @@ $gray: #434b54;
 .page {
   padding-left: 5%;
   padding-right: 5%;
-  height: 100vh;
+  height: unset;
   display: grid !important;
   grid-template-rows: 15% auto 10%;
   grid-row-gap: 5%;
-  padding-top: 10%;
+  padding-top: 20%;
 }
 
 .profiler-results {
@@ -125,17 +129,20 @@ nav {
 .btn-login {
   width: 100% !important;
   color: white !important;
+  margin-left: unset !important;
+  margin-bottom: 5%;
 }
 
 .btn-signup {
   width: 100% !important;
+  margin-left: unset !important;
 }
 
 // Forms
 
 .field {
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 30% 60%;
 }
 
 .action {
@@ -148,5 +155,27 @@ nav {
 
   .btn-danger {
     grid-row-start: 2;
+  }
+}
+
+// Devise User
+
+.new_user {
+  display: contents;
+  min-height: 44vh;
+
+  .field {
+    em {
+      grid-row-start: 3;
+      grid-column-end: 3;
+    }
+  }
+}
+
+.sign-up {
+  grid-row-start: 3;
+
+  a {
+    grid-row-start: 3 !important;
   }
 }
