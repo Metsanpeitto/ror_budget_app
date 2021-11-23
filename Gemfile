@@ -34,6 +34,8 @@ gem 'bootsnap', '>= 1.4.4', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'factory_bot_rails'
+  gem 'rails-controller-testing'
   gem 'rspec-rails', '~> 5.0.0'
 end
 
@@ -49,10 +51,11 @@ group :development do
 end
 
 group :test do
-  # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 3.26'
+  gem 'email_spec'
+  gem 'faker'
   gem 'selenium-webdriver'
-  # Easy installation and use of web drivers to run system tests with browsers
+  gem 'shoulda-matchers'
   gem 'webdrivers'
 end
 
@@ -68,3 +71,6 @@ gem 'rails-bootstrap-toggle-buttons'
 gem 'rubocop', '>= 1.0', '< 2.0'
 gem 'sprockets-rails', require: 'sprockets/railtie'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+%w[rspec-core rspec-expectations rspec-mocks rspec-support].each do |lib|
+  gem lib, git: "https://github.com/rspec/#{lib}.git", branch: 'main'
+end

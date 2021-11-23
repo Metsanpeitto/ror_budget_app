@@ -28,10 +28,10 @@
     </div>
     <div class="logo-collection">
       <% if @icons %>
-        <%= @icons.each_with_index do |img, index|%>
+        <% @icons.each_with_index do |img, index|%>
           <div>
             <h4> logo <%= index+1 %> </h4>
-            <img src= "<%= img %>" title="source: imgur.com">
+            <img src="<%= img %>" >
           </div>
         <% end %>
       <% end %>

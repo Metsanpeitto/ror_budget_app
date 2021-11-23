@@ -27,14 +27,20 @@ follow the instructions [here](https://www.ruby-lang.org/en/documentation/instal
 
 If you want a copy of this file go to the github repository and download it from there
 
-- [`git clone https://github.com/Metsanpeitto/ror_Recipe_app_m5_gp`](https://github.com/Metsanpeitto/ror_Recipe_app_m5_gp)
+- [`git clone https://github.com/Metsanpeitto/ror_budget_app`](https://github.com/Metsanpeitto/ror_budget_app)
 
 
 ### Setup
 
 ```cmd
-git clone  https://github.com/Metsanpeitto/ror_Recipe_app_m5_gp.git
-cd ./ror_Recipe_app_m5_gp
+git clone  https://github.com/Metsanpeitto/ror_budget_app.git
+cd ./ror_budget_app
+```
+
+### Rspec testing
+
+```cmd
+rspec spec/
 ```
 
 ### Install gems
@@ -42,24 +48,6 @@ cd ./ror_Recipe_app_m5_gp
 ```cmd
 bundle install
 ```
-
-### Database creation
-
-```cmd
-# Open Postgres form the terminal 
-$ sudo -u postgres -i
-$ psql
-
-# Create user
-postgres=# create user microverse-user -s
-
-# Create db 
-postgres=# create db ror_blog_m5_w1_development -s
-
-# Destroys older, create new and populate with seed from the terminal
-$ rake db:reset
-```
-
 
 ### Apply migration (only if you generate a new migration file)
 
