@@ -1,11 +1,24 @@
-# ror_Recipe_app_m5_gp
-
+# ror_budget_app
 
 ![Microverse](https://img.shields.io/badge/Microverse-blueviolet)
 
 
-The Recipe app keeps track of all your recipes, ingredients, and inventory. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Also, since sharing recipes is an important part of cooking the app should allow you to make them public so anyone can access them.
+The Budget app keeps track is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
 
+Features: 
+- Register and log in, so that the data is private to them.
+- Introduce new transactions associated with a category.
+- See the money spent on each category.
+
+![Before Index](./screenshots/screen1.png)
+
+![Before Index](./screenshots/signup.png)
+
+![Before Index](./screenshots/spenses.png)
+
+![Before Index](./screenshots/budgets.png)
+
+![Before Index](./screenshots/new_budget.png)
 
 [Recipe App Requirements](https://github.com/microverseinc/curriculum-rails/blob/main/recipe-app/buisness_requirements.md)
 
@@ -33,32 +46,32 @@ If you want a copy of this file go to the github repository and download it from
 ### Setup
 
 ```cmd
-git clone  https://github.com/Metsanpeitto/ror_budget_app.git
-cd ./ror_budget_app
-```
-
-### Rspec testing
-
-```cmd
-rspec spec/
+$ git clone  https://github.com/Metsanpeitto/ror_budget_app.git
+$ cd ./ror_budget_app
 ```
 
 ### Install gems
 
 ```cmd
-bundle install
+$ bundle install
 ```
 
 ### Apply migration (only if you generate a new migration file)
 
 ```cmd
-rails db:migrate
+$ rails db:migrate
 ```
 
-### Usage
+### Run app
 
 ```cmd
-$ruby main.rb
+$ rails s
+```
+
+### Run tests
+
+```cmd
+$ rspec spec/
 ```
 
 ### Verify rubocop
@@ -70,13 +83,13 @@ $ rubocop -A
 ### Install style lint
 
 ```
-npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
+$ npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
 ```
 
 ### Run stylelint autofix
 
 ```
-npx stylelint "**/*.{css,scss}" --fix
+$ npx stylelint "**/*.{css,scss}" --fix
 ```
 
 ### Instruction for non technical persons
@@ -132,5 +145,4 @@ Give a ⭐️ if you like this project!
 
 [![License: CC BY-NC 4.0](https://licensebuttons.net/l/by-nc/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc/4.0/)
 [![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)](http://creativecommons.org/publicdomain/zero/1.0/)
-
 

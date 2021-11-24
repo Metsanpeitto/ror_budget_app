@@ -18,7 +18,6 @@ class EntitiesController < ApplicationController
   def create
     @entity = Entity.new(entity_params)
     @entity.user_id = current_user.id
-
     respond_to do |format|
       if @entity.save
         format.html { redirect_to @entity.groups.first, notice: 'Spense was successfully created.' }

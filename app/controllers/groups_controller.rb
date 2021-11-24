@@ -1,6 +1,6 @@
 class GroupsController < ApplicationController
   load_and_authorize_resource
-  skip_authorization_check only: %i[invalid_site new]
+  # skip_authorization_check only: %i[invalid_site new]
   before_action :set_group, only: %i[show edit update destroy]
 
   # GET /groups or /groups.json

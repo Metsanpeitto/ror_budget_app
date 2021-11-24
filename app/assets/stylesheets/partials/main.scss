@@ -160,6 +160,19 @@ nav {
 
 // Devise User
 
+.sign-up {
+  grid-row-start: 3;
+
+  a {
+    grid-row-start: 3 !important;
+  }
+
+  em {
+    min-height: 122px;
+    margin-bottom: 40px;
+  }
+}
+
 .new_user {
   display: contents;
   min-height: 44vh;
@@ -169,13 +182,5 @@ nav {
       grid-row-start: 3;
       grid-column-end: 3;
     }
-  }
-}
-
-.sign-up {
-  grid-row-start: 3;
-
-  a {
-    grid-row-start: 3 !important;
   }
 }
