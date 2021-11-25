@@ -1,6 +1,5 @@
 # ror_budget_app
 
-
 ![Microverse](https://img.shields.io/badge/Microverse-blueviolet)
 
 
