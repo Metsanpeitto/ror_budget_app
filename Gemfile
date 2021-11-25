@@ -1,8 +1,6 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.0.0'
-
 gem 'devise'
 gem 'font-awesome-rails'
 
@@ -74,3 +72,4 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 %w[rspec-core rspec-expectations rspec-mocks rspec-support].each do |lib|
   gem lib, git: "https://github.com/rspec/#{lib}.git", branch: 'main'
 end
+gem 'rake'
