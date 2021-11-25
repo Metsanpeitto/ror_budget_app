@@ -10,6 +10,7 @@ Features:
 - Introduce new transactions associated with a category.
 - See the money spent on each category.
 
+
 ### Video
 
 ![video] (https://drive.google.com/file/d/1Ju8bL0QMtSG0qKpDTbWxa3Jkqyn0-tOR/view?usp=sharing)
