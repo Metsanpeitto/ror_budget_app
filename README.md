@@ -15,6 +15,14 @@ Features:
 
 ![Before Index](./screenshots/screen1.png)
 
+The Budget app keeps track is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
+
+Features: 
+- Register and log in, so that the data is private to them.
+- Introduce new transactions associated with a category.
+- See the money spent on each category.
+
+
 ![Before Index](./screenshots/signup.png)
 
 ![Before Index](./screenshots/spenses.png)
