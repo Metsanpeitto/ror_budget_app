@@ -9,11 +9,24 @@ Features:
 - Introduce new transactions associated with a category.
 - See the money spent on each category.
 
-### Video
+### Video introduction
 
 ![video] (https://drive.google.com/file/d/1Ju8bL0QMtSG0qKpDTbWxa3Jkqyn0-tOR/view?usp=sharing)
 
-![Before Index](./screenshots/screen1.png)
+
+### Live demo
+
+Please remember that the app is designed for mobile. So in the google chrome, 
+press ctrl + shift + i and it will display the developer console. 
+On the top left corner find the icon of the mobile and tablet called toggle 
+device toolbar and press it to make the screen emulate a mobile phone and experience the 
+app in its original format.
+
+[Demo](https://mysterious-brushlands-85611.herokuapp.com/)
+
+### Scrennshots
+
+[Before Index](./screenshots/screen1.png)
 
 The Budget app keeps track is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
 
