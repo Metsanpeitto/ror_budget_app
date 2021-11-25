@@ -1,0 +1,35 @@
+<div class="top-title">
+  <h1>Spenses</h1>
+</div>
+<div class="page-spenses">
+  <% current_user.groups.each do |group|%>
+    <br>
+    <div class="entity-header">
+      <img src='<%=  group.icon %>' alt="logo">
+      <h5> <%= group.name %> </h5>
+    </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Spense</th>
+          <th scope="col">Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% group.entities.each do |e| %>
+          <div class="new-table">
+            <tr >
+              <th scope="row"><%= e.name %></th>
+              <td><%= e.amount %>$ </td>
+            </tr>
+          </div>
+        <% end %>
+      </tbody>
+    </table>
+  <% end %>
+  <br>
+  <div class="action">
+    <%= link_to 'New Spense', new_entity_path, class: "btn btn-success" %>
+    <%= link_to 'Back', new_entity_path, class: "btn btn-danger" %>
+  </div>
+</div>

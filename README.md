@@ -2,6 +2,31 @@
 
 ![Microverse](https://img.shields.io/badge/Microverse-blueviolet)
 
+The Budget app keeps track is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
+
+Features: 
+- Register and log in, so that the data is private to them.
+- Introduce new transactions associated with a category.
+- See the money spent on each category.
+
+### Video introduction
+
+![video] (https://drive.google.com/file/d/1Ju8bL0QMtSG0qKpDTbWxa3Jkqyn0-tOR/view?usp=sharing)
+
+
+### Live demo
+
+Please remember that the app is designed for mobile. So in the google chrome, 
+press ctrl + shift + i and it will display the developer console. 
+On the top left corner find the icon of the mobile and tablet called toggle 
+device toolbar and press it to make the screen emulate a mobile phone and experience the 
+app in its original format.
+
+[Demo](https://mysterious-brushlands-85611.herokuapp.com/)
+
+### Scrennshots
+
+[Before Index](./screenshots/screen1.png)
 
 The Budget app keeps track is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
 
@@ -11,9 +36,19 @@ Features:
 - See the money spent on each category.
 
 
+![Before Index](./screenshots/signup.png)
+
+![Before Index](./screenshots/spenses.png)
+
+![Before Index](./screenshots/budgets.png)
+
+![Before Index](./screenshots/new_budget.png)
 
 [Recipe App Requirements](https://github.com/microverseinc/curriculum-rails/blob/main/recipe-app/buisness_requirements.md)
 
+### Design
+
+This design is based in the original work of [Gregory Vella](https://www.behance.net/gregoirevella)
 
 =======
 
@@ -39,26 +74,32 @@ If you want a copy of this file go to the github repository and download it from
 ### Setup
 
 ```cmd
-git clone  https://github.com/Metsanpeitto/ror_budget_app.git
-cd ./ror_budget_app
+$ git clone  https://github.com/Metsanpeitto/ror_budget_app.git
+$ cd ./ror_budget_app
 ```
 
 ### Install gems
 
 ```cmd
-bundle install
+$ bundle install
 ```
 
 ### Apply migration (only if you generate a new migration file)
 
 ```cmd
-rails db:migrate
+$ rails db:migrate
 ```
 
-### Usage
+### Run app
 
 ```cmd
-$ruby main.rb
+$ rails s
+```
+
+### Run tests
+
+```cmd
+$ rspec spec/
 ```
 
 ### Verify rubocop
@@ -70,13 +111,13 @@ $ rubocop -A
 ### Install style lint
 
 ```
-npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
+$ npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
 ```
 
 ### Run stylelint autofix
 
 ```
-npx stylelint "**/*.{css,scss}" --fix
+$ npx stylelint "**/*.{css,scss}" --fix
 ```
 
 ### Instruction for non technical persons
@@ -129,8 +170,6 @@ Give a ⭐️ if you like this project!
 
 =======
 
-
 [![License: CC BY-NC 4.0](https://licensebuttons.net/l/by-nc/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc/4.0/)
 [![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)](http://creativecommons.org/publicdomain/zero/1.0/)
-
 

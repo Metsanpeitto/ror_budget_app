@@ -1,0 +1,45 @@
+<%= form_with(model: group) do |form| %>
+  <div class="group-form">
+    <% if group.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(group.errors.count, "error") %> prohibited this budget from being saved:</h2>
+        <ul>
+          <% group.errors.each do |error| %>
+            <li><%= error.full_message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+    <div class="field">
+      <%= form.label :name %>
+      <%= form.text_field :name, required: true %>
+    </div>
+    <div class="field">
+      <%= form.label :icon %>
+      <%= select_tag :icon, options_for_select([
+      ['logo1', @icons[0]],
+      ['logo2' ,@icons[1]],
+      ['logo3' ,@icons[2]],
+      ['logo4' ,@icons[3]],
+      ['logo5' ,@icons[4]],
+      ['logo6' ,@icons[5]],
+      ['logo7' ,@icons[6]]
+    ]), required: true %>
+    </div>
+    <div class="logo-collection">
+      <% if @icons %>
+        <% @icons.each_with_index do |img, index|%>
+          <div>
+            <h4> logo <%= index+1 %> </h4>
+            <img src="<%= img %>" >
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+    <%= hidden_field_tag 'text_field', current_user.id  %>
+    <%= hidden_field_tag 'text_field', nil  %>
+    <div class="actions">
+      <%= button_to "New", {action: "create"}, { class:"btn btn-success" }  %>
+    </div>
+  </div>
+<% end %>

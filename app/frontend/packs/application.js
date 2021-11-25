@@ -3,7 +3,10 @@
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
 
-// Add this line  
+//= require multi-select
+//= require jquery
+//= require jquery_ujs
+
 import '../js/bootstrap_js_files.js'
 
 import Rails from "@rails/ujs"
@@ -14,3 +17,4 @@ import "channels"
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
