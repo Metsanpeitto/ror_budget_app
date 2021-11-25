@@ -5,7 +5,8 @@ class GroupsController < ApplicationController
 
   # GET /groups or /groups.json
   def index
-    @groups = Group.all
+    @groups = []
+    @groups = Group.where(user_id: current_user.id)
     @icons = icons
   end
 
@@ -25,6 +26,7 @@ class GroupsController < ApplicationController
 
   # POST /groups or /groups.json
   def create
+    
     @group = Group.new(name: group_params[:name], icon: params[:icon])
     @group.user_id = current_user.id
     respond_to do |format|

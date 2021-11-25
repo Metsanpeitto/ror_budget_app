@@ -21,10 +21,11 @@
     <%= form.label :group_ids %>
     <%= form.collection_select :group_ids, current_user.groups.order(:name), :id, :name, {}, { class: "input", multiple: true } %>
   </div>
+    <%= button_to "New", {action: "create"}, { class:"btn btn-success new-spense" }  %>
+
 </div>
 <%= hidden_field_tag 'text_field', current_user.id  %>
 <%= hidden_field_tag 'text_field', nil  %>
 
-  <%= button_to "New", {action: "create"}, { class:"btn btn-success new-spense" }  %>
 
 <% end %>

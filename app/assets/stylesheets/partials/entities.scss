@@ -39,8 +39,11 @@
   .mb3 {
     grid-template-rows: 20px auto !important;
   }
+
+  .new-spense {
+    position: absolute;
+    bottom: 130px;
+    margin-left: 0%;
+  } 
 }
 
-.new-spense {
-  margin-bottom: 40px;
-}

@@ -10,6 +10,10 @@ Features:
 - Introduce new transactions associated with a category.
 - See the money spent on each category.
 
+### Video
+
+![video] (https://drive.google.com/file/d/1Ju8bL0QMtSG0qKpDTbWxa3Jkqyn0-tOR/view?usp=sharing)
+
 ![Before Index](./screenshots/screen1.png)
 
 ![Before Index](./screenshots/signup.png)
@@ -21,6 +25,10 @@ Features:
 ![Before Index](./screenshots/new_budget.png)
 
 [Recipe App Requirements](https://github.com/microverseinc/curriculum-rails/blob/main/recipe-app/buisness_requirements.md)
+
+### Design
+
+This design is based in the original work of [Gregory Vella](https://www.behance.net/gregoirevella)
 
 =======
 
