@@ -12,6 +12,7 @@ Features:
 - See the money spent on each category.
 
 
+
 [Recipe App Requirements](https://github.com/microverseinc/curriculum-rails/blob/main/recipe-app/buisness_requirements.md)
 
 =======
