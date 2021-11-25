@@ -26,7 +26,6 @@ class GroupsController < ApplicationController
 
   # POST /groups or /groups.json
   def create
-    
     @group = Group.new(name: group_params[:name], icon: params[:icon])
     @group.user_id = current_user.id
     respond_to do |format|
